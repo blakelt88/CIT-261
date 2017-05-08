@@ -64,6 +64,10 @@
 		var output2 = "";
 		var output3 = "";
 		
+		// Variable below added for demonstrating concat() element use
+		
+		var knowmore = "If you'd like to know more ask Mom and Dad!";
+		
 		// IF logic to determine which information goes with what
 		
 		// V2 Made the .name from object to call with in stead of array position
@@ -109,68 +113,15 @@
 		
 		// Outputs the information given after logic is through
 		
+		// V2 I used the concat() method to demonstrate it on ouput3
+		
      document.getElementById("names").innerHTML = output;
      document.getElementById("ages").innerHTML = output1;
      document.getElementById("birthdates").innerHTML = output2;
-     document.getElementById("interests").innerHTML = output3;
-		
-	//	document.getElementById("names").innerHTML = names;
-	//	document.getElementById("ages").innerHTML = ages;
-	//	document.getElementById("birthdates").innerHTML = birthdates;
-	//	document.getElementById("interests").innerHTML = interests;
+     document.getElementById("interests").innerHTML = output3.concat(". ",knowmore);
 		
 	}
 		
-//		function items(output1,output2,output3,output4) {
-//		
-//		
-//		for (i = 0; i < names.length; i++) {
-//			output1 += "Hi! I'm " + names[i];
-//			
-//			if (choice = 1) {
-//				document.getElementById("names").innerHTML = output1;
-//			}
-//		}
-//		
-//			for (j = 0; j < ages.length; j++) {
-//			output2 += ages[j];
-//		}
-//		
-//			for (k = 0; k < birthdates.length; k++) {
-//			output3 += birthdates[k] + "&nbsp";
-//		}
-//		
-//			for (l = 0; l < interests.length; l++) {
-//			output4 += interests[l];
-//		}
-//		
-//		return output1;
-//		return output2;
-//		return output3;
-//		return output4;
-//	}
-//		
-// function who() {
-//		var choice = document.getElementById("selection").selectedIndex;
-//		var output = "";
-//		
-//		if (choice = 1) {
-//			output += output1;
-//		}
-//		else if (choice = 2) {
-//			output += output2;
-//		}
-//		else if (choice = 3) {
-//			output += output3;
-//		}
-//		else {
-//			output += output4;
-//		}
-//		return
-
-//	}
-// 
-  	
   </script>
   
 </body>
