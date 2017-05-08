@@ -37,15 +37,11 @@
  
   <script type="text/javascript">
   	
-  // Creating the function who() so it's capable of being called later or used for button
+  	//declaring the arrays and their values
   	
   	function who() {
-  
-  // Created the variable that will house the choice from the <select> tag
   		
   	var choice = document.getElementById("selection").value;
-  	
-  // Declaring the arrays used when selection is made
   	
 		var names = ["Blake ", "Karilyn " , "Eli " , "Caden ", "Hudson ", "Clara "];
 		
@@ -54,15 +50,11 @@
 		var birthdates = [1988 , 1987 , 2010 , 2012 , 2014 , 2016 ];
 		
 		var interests = ["make Websites", "do Hair and Make-up", "play Minecraft", "play Star Wars Disney Infinity", "play in the sand box", "suck my pacifier"];
-	
-	// Empty variables for housing end result coming from each array
 		
 		var output = "";
 		var output1 = "";
 		var output2 = "";
 		var output3 = "";
-	
-	// IF logic to determine which information goes with what
 		
 		if (choice == 1) {
 			output += names[0];
@@ -102,14 +94,69 @@
 			output2 += birthdates[5];
 			output3 += interests[5];
 		}
-	
-	// Outputs the information given after logic is through
 		
      document.getElementById("names").innerHTML = output;
      document.getElementById("ages").innerHTML = output1;
      document.getElementById("birthdates").innerHTML = output2;
      document.getElementById("interests").innerHTML = output3;
 		
+	//	document.getElementById("names").innerHTML = names;
+	//	document.getElementById("ages").innerHTML = ages;
+	//	document.getElementById("birthdates").innerHTML = birthdates;
+	//	document.getElementById("interests").innerHTML = interests;
+		
+	}
+		
+//		function items(output1,output2,output3,output4) {
+//		
+//		
+//		for (i = 0; i < names.length; i++) {
+//			output1 += "Hi! I'm " + names[i];
+//			
+//			if (choice = 1) {
+//				document.getElementById("names").innerHTML = output1;
+//			}
+//		}
+//		
+//			for (j = 0; j < ages.length; j++) {
+//			output2 += ages[j];
+//		}
+//		
+//			for (k = 0; k < birthdates.length; k++) {
+//			output3 += birthdates[k] + "&nbsp";
+//		}
+//		
+//			for (l = 0; l < interests.length; l++) {
+//			output4 += interests[l];
+//		}
+//		
+//		return output1;
+//		return output2;
+//		return output3;
+//		return output4;
+//	}
+//		
+// function who() {
+//		var choice = document.getElementById("selection").selectedIndex;
+//		var output = "";
+//		
+//		if (choice = 1) {
+//			output += output1;
+//		}
+//		else if (choice = 2) {
+//			output += output2;
+//		}
+//		else if (choice = 3) {
+//			output += output3;
+//		}
+//		else {
+//			output += output4;
+//		}
+//		return
+
+//	}
+// 
+  	
   </script>
   
 </body>
